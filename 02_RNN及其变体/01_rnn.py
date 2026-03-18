@@ -53,13 +53,13 @@ def dm02_rnn_base_len():
 
     print("$"*33)
 
-    # 一个一个Token的送
-    # x的第一个"维度是sequence_len
-    for idx in range(x.size(0)):
-        temp=x[idx].unsqueeze(dim=0)
-        output,h0=rnn(temp,h0)
-        print(f"out:\t{output}")
-        print(f"h0:\t{h0}")
+    # # 一个一个Token的送
+    # # x的第一个"维度是sequence_len
+    # for idx in range(x.size(0)):
+    #     temp=x[idx].unsqueeze(dim=0)
+    #     output,h0=rnn(temp,h0)
+    #     print(f"out:\t{output}")
+    #     print(f"h0:\t{h0}")
 
     # 冲冲冲
 
